@@ -18,6 +18,8 @@ Then download the `maffblaster.conf` file in the base of the repos.conf director
 
 `wget https://raw.githubusercontent.com/maffblaster/maffblaster-overlay/master/maffblaster.conf --output-document=/etc/portage/repos.conf/maffblaster.conf`
 
+---
+
 Alternatively `curl` can be employed if `wget` is not available:
 
 `curl https://raw.githubusercontent.com/maffblaster/maffblaster-overlay/master/maffblaster.conf --output /etc/portage/repos.conf/maffblaster.conf`
