@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE repositories SYSTEM "/dtd/repositories.dtd">
+<repositories xmlns="" version="1.0">
+  <repo quality="experimental" status="unofficial">
+    <name>maffblaster</name>
+    <description lang="en">An ebuild repository focusing on bringing the Matrix.org suite to Gentoo.</description>
+    <homepage>https://github.com/maffblaster/maffblaster-overlay</homepage>
+    <owner type="person">
+		<email>maffblaster@gentoo.org</email>
+		<name>Matthew Marchese</name>
+    </owner>
+    <source type="git">git://github.com/maffblaster/maffblaster-overlay.git</source>
+    <feed>https://github.com/maffblaster/maffblaster-overlay/commits/master.atom</feed>
+  </repo>
+</repositories>
