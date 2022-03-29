@@ -12,9 +12,9 @@ Each of the following commands will need to be run with elevated permissions as 
 
 This overlay uses the `repos.conf` repository management system. Be sure the repos.conf directory exists: 
 
-`mkdir -p /etc/portage/repos.conf`
+`mkdir --parents /etc/portage/repos.conf`
 
-Then download the `maffblaster.conf` file in the base of the repos.conf directory using the following command:
+Then download the `maffblaster.conf` file into the repos.conf directory using the following command:
 
 `wget https://raw.githubusercontent.com/maffblaster/maffblaster-overlay/master/maffblaster.conf --output-document=/etc/portage/repos.conf/maffblaster.conf`
 
@@ -30,7 +30,7 @@ Then use `emaint` to sync the repository:
 
 #### eselect repository
 
-Requires [eselect-repository](https://packages.gentoo.org/packages/app-eselect/eselect-repository) to be installed:
+Requires the [eselect-repository](https://packages.gentoo.org/packages/app-eselect/eselect-repository) package to be installed:
 
 `eselect repository add maffblaster git https://github.com/maffblaster/maffblaster-overlay.git`
 
@@ -42,4 +42,8 @@ Requires [eselect-repository](https://packages.gentoo.org/packages/app-eselect/e
 
 #### eselect repository
 
-`eselect repository remove maffblaster` 
+`eselect repository remove maffblaster`
+
+#### Purge the ebuild repository directory
+
+`rm --recursive --force /var/db/repos/maffblaster`
